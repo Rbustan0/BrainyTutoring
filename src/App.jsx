@@ -6,7 +6,7 @@ import Home from './pages/home'
 
 function App() {
   return (
-    <div className='container'>
+    <div className="">
       <Headers />
       <Nav />
       <Home />
