@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <h1>About Us</h1>
-      <p>Welcome to Brainy Tutoring, your trusted partner in STEM education!</p>
+      <p>Welcome to Brainey Tutoring, your trusted partner in STEM education!</p>
       <h2>Our Achievements</h2>
       <ul>
         <li>Over 10 years of experience in providing high-quality STEM tutoring</li>

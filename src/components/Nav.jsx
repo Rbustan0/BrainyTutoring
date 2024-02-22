@@ -5,8 +5,11 @@ const Nav = () => {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
+        <nav className='bg-gray-400 p-4'> 
+          <ul className='flex items-center justify-between'>
+            <a href='/'>
+              <img src='/brainey.png' alt='brainey logo' className='w-10 h-10' />
+            </a>
             <li>
               <Link to="/">Home</Link>
             </li>

@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 const Headers = () => {
 
   const images = [
-    '/calcu.webp',
+    // '/calcu.webp',
     '/world.jpeg',
     '/coding.jpeg',
     '/robo.webp',
@@ -12,7 +12,7 @@ const Headers = () => {
   ];
 
   return (
-    <div>
+    <div className='bg-slate-300'>
       <h1>Brainy Tutoring</h1>
       <Carousel images={images} />
     </div>
