@@ -65,10 +65,10 @@ npm run build
 <big>Once we have the program started, run:</big>
 
 ```
-npm run start
+npm run dev
 ```
 
-<big>Now you can access the application in your web browser at `http://localhost:3000`.</big>
+<big>Now you can access the application in your web browser at `http://localhost:5000`.</big>
 
 ## <a name="6" id="6"></a> <span style="color: Pink">Known Bugs
 * _Just getting started, no known bugs at this time_
