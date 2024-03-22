@@ -1,31 +1,36 @@
+// Nav.jsx
 import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Router>
-      <div>
-        <nav className='bg-gray-400 p-4'> 
-          <ul className='flex items-center justify-between'>
-            <a href='/'>
-              <img src='/brainey.png' alt='brainey logo' className='w-10 h-10' />
-            </a>
+    <div>
+      <nav className='bg-gray-400 p-4'> 
+        <ul className='grid grid-cols-7'>
+          <span className='col-span-2 flex justify-center'>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <img src='/brainey.png' alt='brainey logo' className='w-10 h-10' />
+              </Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+          </span>
+          <span className='col-span-3 grid grid-cols-4'>
+            <li className='flex items-center justify-center'>
+              <Link to="/" className="nav-link">Home</Link>
             </li>
-            <li>
-              <Link to="/cost">Cost</Link>
+            <li className='flex items-center justify-center'>
+              <Link to="/contact" className="nav-link">Contact</Link>
             </li>
-            <li>
-              <Link to="/about">About</Link>
+            <li className='flex items-center justify-center'>
+              <Link to="/cost" className="nav-link">Cost</Link>
             </li>
-          </ul>
-        </nav>
+            <li className='flex items-center justify-center'>
+              <Link to="/about" className="nav-link">About</Link>
+            </li>
+          </span>
+        </ul>
+      </nav>
     </div>
-    </Router>
   );
 };
 

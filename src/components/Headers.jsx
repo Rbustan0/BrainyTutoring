@@ -13,7 +13,7 @@ const Headers = () => {
 
   return (
     <div className='bg-slate-300'>
-      <h1>Brainy Tutoring</h1>
+      <h1 className='text-7xl text-center pt-2 pb-4 font-extrabold font-mono'>Brainy Tutoring</h1>
       <Carousel images={images} />
     </div>
   );

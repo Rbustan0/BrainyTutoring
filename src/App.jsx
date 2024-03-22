@@ -1,18 +1,23 @@
-import React from 'react'
-import Headers from './components/Headers'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Home from './pages/home'
+// App.jsx
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+import Headers from './components/Headers';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Index from './pages/index';
+
+const App = () => {
   return (
-    <div className="">
-      <Headers />
-      <Nav />
-      <Home />
-      <Footer/>
-    </div>
-  )
-}
+    <Router>
+      <div>
+        <Headers />
+        <Nav />
+        <Index />
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
