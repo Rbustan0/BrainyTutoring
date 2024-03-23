@@ -1,5 +1,9 @@
 import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import necessary components
+import Home from '../pages/home'; // Import the Home component
+import Contact from '../pages/contact'; // Import the Contact component
+import Cost from '../pages/cost'; // Import the Cost component
+import About from '../pages/about'; // Import the About component
 
 const Nav = () => {
   return (
@@ -21,7 +25,13 @@ const Nav = () => {
             </li>
           </ul>
         </nav>
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cost" element={<Cost />} /> {/* Route for the Cost component */}
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </Router>
   );
 };

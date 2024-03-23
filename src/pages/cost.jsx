@@ -1,8 +1,10 @@
 import React from 'react';
+import Headers from '../components/Headers';
 
 const Cost = () => {
   return (
     <div>
+      <Headers />
       <h1>Cost of Services</h1>
       <h2>Monthly Pricing</h2>
       <p>...</p>

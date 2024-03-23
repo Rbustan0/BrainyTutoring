@@ -1,18 +1,20 @@
-import React from 'react'
-import Headers from './components/Headers'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Home from './pages/home'
+import React from 'react';
+import Headers from './components/Headers';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Slides from './components/Slides';
+
 
 function App() {
   return (
-    <div className="">
+      <div className="">
       <Headers />
+      <Slides />
       <Nav />
-      <Home />
       <Footer/>
-    </div>
-  )
+      </div>
+      
+  );
 }
 
 export default App
