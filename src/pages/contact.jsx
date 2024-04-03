@@ -36,7 +36,6 @@ const ContactPage = () => {
       <h2>Contact Information</h2>
         <p>Phone: 123-456-7890</p>
         <p>Email: info@example.com</p>
-        <p>Social Media: <a href="https://example.com">Facebook</a>, <a href="https://example.com">Twitter</a></p>
       </body>
       <div>
         
