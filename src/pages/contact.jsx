@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.css';
 
 const ContactPage = () => {
   const handleSubmit = (e) => {
@@ -7,26 +8,38 @@ const ContactPage = () => {
   };
 
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" required />
+    <div className='contact'>
+      <header>Contact Us</header>
+      <link rel="stylesheet" href="contact.css"></link>
+      <form id="form" class="topBefore" onSubmit={handleSubmit}>
+        <div>
+        <label htmlFor="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder='Name' autoComplete='off' required />
+        </div>
 
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <div>
+        <label htmlFor="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder='Email' autoComplete='off' required />
+        </div>
 
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <div>
+        <label htmlFor="message">Message: </label>
+        <textarea id="message" rows="5" cols="60" name="message" placeholder='Enter Message' autoComplete='off' required></textarea>
+        </div>
 
-        <button type="submit">Send</button>
+        <div>
+        <button type="submit" id="submit">Send</button>
+        </div>
       </form>
 
-      <div>
-        <h2>Contact Information</h2>
+      <body>
+      <h2>Contact Information</h2>
         <p>Phone: 123-456-7890</p>
         <p>Email: info@example.com</p>
         <p>Social Media: <a href="https://example.com">Facebook</a>, <a href="https://example.com">Twitter</a></p>
+      </body>
+      <div>
+        
       </div>
     </div>
   );
