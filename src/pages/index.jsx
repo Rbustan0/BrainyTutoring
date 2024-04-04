@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Cost from './Cost';
-import Contact from './Contact';
-import About from './About';
+import Home from './home';
+import Cost from './cost';
+import Contact from './contact';
+import About from './about';
 
 const Index = () => {
   return (
