@@ -1,6 +1,6 @@
 # <span style="color: Pink">Brainy Tutoring
 
-#### By **Roye Bustan, Nathan Hyatt, Remy Flores**
+#### By **Roye Bustan, Nathan Hyatt, Remy Flores, Neil Reyes**
 
 #### **Brainy Tutoring**
 
