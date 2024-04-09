@@ -1,0 +1,167 @@
+:root {
+    --col-primary: #296eb3;
+    --col-secondary: #003b81;
+    --col-background: #e8e8e8;
+    --col-light: #e8e8e8;
+    --col-dark: #022f64;
+  
+    --col-free: #7dbaff;
+    --col-bronze: #b85a24;
+    --col-silver: #8a8a8a;
+    --col-gold: #e2a922;
+}
+
+body {
+    font-size: 100%;
+    padding: 1em;
+    background: var(--col-background);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.price_table {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    align-items: start;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    max-width: 80em;
+}
+
+.package {
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+  
+    h2 {
+        margin: 0;
+        padding: 1rem;
+        background: var(--col-primary);
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.4rem;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .price {
+        padding: 0.2rem 1rem;
+        background: linear-gradient(
+            45deg,
+            var(--col-secondary) 0%,
+            var(--col-dark) 100%
+        );
+        color: white;
+        text-shadow: 0 4px 0 var(--col-dark);
+    }
+    p {
+        padding: 1rem;
+    }
+    .price {
+        font-size: 1.2em;
+        font-weight: normal;
+        text-align: center;
+        box-shadow: inset 0 10px 4px -6px rgba(0, 0, 0, 0.1);
+    }
+    .big {
+        display: inline;
+        font-size: 4em;
+        font-weight: 700;
+    }
+    ul {
+        list-style: none;
+        padding: 0 0 1rem 0;
+        margin: 0;
+        border-bottom: 1px solid var(--col-primary);
+    }
+    li {
+        padding: 0.8em 1em;
+        font-size: 0.9em;
+        &:nth-child(odd) {
+            background: var(--col-light);
+        }
+    }
+    button {
+        cursor: pointer;
+        padding: 1em 2em;
+        font-size: 1rem;
+        display: block;
+        color: white;
+        margin: 1rem auto;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(
+            0deg,
+            var(--col-secondary) 0%,
+            var(--col-primary) 100%
+        );
+        transition: all 0.2s;
+        &:hover,
+        &:focus {
+            background: linear-gradient(
+                0deg,
+                var(--col-secondary) 0%,
+                var(--col-dark) 100%
+            );
+            box-shadow: 0 0 0 4px white, 0 0 0 8px var(--col-primary);
+            outline: 0;
+        }
+    }
+    .banner {
+        background: linear-gradient(90deg, #33a530 0%, #4eee49 50%, #33a530 100%);
+        transform: rotate(-45deg);
+        position: absolute;
+        z-index: 1;
+        padding: 0.5rem 4rem;
+        top: 2rem;
+        left: -4rem;
+        border: 2px solid #91ff69;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.cost.package_free h2::after {
+    background: var(--col-free);
+    background: linear-gradient(
+        90deg,
+        var(--col-free) 0%,
+        white 50%,
+        var(--col-free) 100%
+    );
+}
+
+.cost.package_bronze h2::after {
+    background: linear-gradient(
+        90deg,
+        var(--col-bronze) 0%,
+        white 50%,
+        var(--col-bronze) 100%
+    );
+}
+
+.cost.package_silver h2::after {
+    background: linear-gradient(
+        90deg,
+        var(--col-silver) 0%,
+        white 50%,
+        var(--col-silver) 100%
+    );
+}
+
+.cost.package_gold h2::after {
+    background: linear-gradient(
+        90deg,
+        var(--col-gold) 0%,
+        white 50%,
+        var(--col-gold) 100%
+    );
+}
