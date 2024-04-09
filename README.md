@@ -17,6 +17,7 @@
 ## <a name="1" id="1"></a><span style="color: Pink">Technologies Used
 * 
 * JavaScript
+* CSS
 * React
 * Babel
 * ESLint
