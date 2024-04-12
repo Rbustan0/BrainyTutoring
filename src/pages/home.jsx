@@ -15,14 +15,16 @@ const Home = () => {
         </div>
         <div className="md:w-1/2 p-4">
           <img src='/1.jpg' alt='College students gathering for coffee' 
-            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg" 
+            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg"
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mb-8">
         <div className="md:w-1/2 p-4">
-          <img src='/2.jpg' alt='Chemistry student prepping tools for experiment' 
-            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg" 
+          <img src='/new1.jpg' alt='Chemistry student prepping tools for experiment' 
+            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg"
+            loading="lazy"
           />
         </div>
         <div className="md:w-1/2 p-4">
@@ -35,14 +37,16 @@ const Home = () => {
         </div>
         <div className="md:w-1/2 p-4">
           <img src='/3.jpg' alt='A mentor giving a speech to a group' 
-            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg" 
+            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg"
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mb-8">
         <div className="md:w-1/2 p-4">
-          <img src='/4.jpg' alt='Acceptance letters' 
-            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg" 
+          <img src='/new2.jpg' alt='A group of people in a meeting room discussing business strategies' 
+            className="w-full h-auto lg:-h-full object-fill md:h-64 lg:h-96 rounded-lg"
+            loading="lazy"
           />
         </div>
         <div className="md:w-1/2 p-4">
