@@ -33,9 +33,9 @@ const Nav = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
     { path: '/cost', label: 'Cost' },
-    { path: '/about', label: 'About' },
   ];
 
   return (

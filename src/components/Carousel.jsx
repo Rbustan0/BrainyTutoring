@@ -39,6 +39,7 @@ const Carousel = ({ images }) => {
             src={image}
             alt="carousel"
             className="absolute w-full h-full object-cover transition-opacity duration-1000"
+            loading="lazy"
             style={{
               opacity: index === currentIndex ? opacity : 0,
             }}
