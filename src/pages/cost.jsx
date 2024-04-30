@@ -1,64 +1,86 @@
 import React from 'react';
-import './cost.css'; // Import the CSS file
 
-const CostPage = () => {
-    return (
-        <div className="price_table">
-            <div class="package package_free">
-              <h2>Free Assessment</h2>
-              <div class="price">$<div class="big">0</div></div>
-              <p>Sign up today for a free student assessment: </p>
-              <ul>
-                <li>Evaluation of student outcomes</li>
-                <li>Guideline for cirriculum development</li>
-                <li>Insight for tutoring recommendations</li>
-                <li>Access to secure accreditation</li>
-                <li>Ensure student success</li>
+const Cost = () => {
+  const costPackageList = [
+    {
+      title: "Free Assessment",
+      price: "$0",
+      description: "Sign up today for a free student assessment:",
+      features: [
+        "Evaluation of student outcomes",
+        "Guideline for curriculum development",
+        "Insight for tutoring recommendations",
+        "Access to secure accreditation",
+        "Ensure student success"
+      ],
+      buttonText: "Learn more"
+    },
+    {
+      title: "Monthly",
+      price: "$30/mo",
+      description: "Includes everything in our Free package plus:",
+      features: [
+        "4 hours of tutoring balance",
+        "48 hour notice tutoring appointments",
+        "Obtain session notes",
+        "Access to tutoring discord server",
+        "1 subject limit"
+      ],
+      buttonText: "Learn more"
+    },
+    {
+      title: "Yearly",
+      price: "$300/yr",
+      description: "Includes everything in our Bronze package plus:",
+      features: [
+        "65 hours of tutoring balance",
+        "24 hour notice tutoring appointments",
+        "Obtain educational recommendations",
+        "Advanced tutoring insight*",
+        "2 subject limit"
+      ],
+      buttonText: "Learn more"
+    },
+    {
+      title: "Membership",
+      price: "$15/mo",
+      description: "Unique membership experience includes:",
+      features: [
+        "50% more tutoring hours",
+        "Drop-in tutoring sessions",
+        "Free monthly assessment consults",
+        "Workshop invitations",
+        "Access to support chat"
+      ],
+      buttonText: "Learn more"
+    }
+  ];
+
+  return (
+    <div className='container mx-auto mt-4'>
+      <div className="p-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {costPackageList.map((costPackage, index) => (
+            <li key={index} className="bg-white shadow-xl p-6 relative lg:rounded-lg">
+              <h2 className="bg-blue-500 rounded-t-sm text-center text-lg font-bold text-white">{costPackage.title}</h2>
+              <div className="bg-blue-800 rounded-b-sm text-center text-3xl font-bold text-white mb-4">{costPackage.price}</div>
+              <p className="text-sm italic font-semibold text-center mb-4 pb-2 border-b-4 border-blue-400">{costPackage.description}</p>
+              <ul className="text-sm mb-4">
+                {costPackage.features.map((feature, index) => (
+                  <li key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-100'}>{feature}</li>
+                ))}
               </ul>
-              <button>Learn more</button>
-            </div>
-            <div class="package package_bronze">
-              <h2>Monthly</h2>
-              <div class="price">$<div class="big">30</div>/mo</div>
-              <p>Includes everything in our Free package plus:</p>
-              <ul>
-                <li>4 hours of tutoring balance</li>
-                <li>48 hour notice tutoring appointments</li>
-                <li>Obtain session notes</li>
-                <li>Access to tutoring discord server</li>
-                <li>1 subject limit</li>
-              </ul>
-              <button>Learn more</button>
-            </div>
-            <div class="package package_silver">
-            <div class="banner">Most Popular</div>
-              <h2>Yearly</h2>
-              <div class="price">$<div class="big">300</div>/yr</div>
-              <p>Includes everything in our Bronze package plus:</p>
-              <ul>
-                <li>65 hours of tutoring balance</li>
-                <li>24 hour notice tutoring appointments</li>
-                <li>Obtain educational recommendations</li>
-                <li>Advanced tutoring insight*</li>
-                <li>2 subject limit</li>
-              </ul>
-              <button>Learn more</button>
-            </div>
-            <div class="package package_gold">
-              <h2>Membership</h2>
-              <div class="price">$<div class="big">15</div>/mo</div>
-              <p>Unique membership experience includes:</p>
-              <ul>
-                <li>50% more tutoring hours</li>
-                <li>Drop-in tutoring sessions</li>
-                <li>Free monthly assessment consults</li>
-                <li>Workshop invitations</li>
-                <li>Access to support chat</li>
-              </ul>
-              <button>Learn more</button>
-            </div>
-        </div>
-    );
+              <div className="flex justify-center">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  {costPackage.buttonText}
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
-export default CostPage;
+export default Cost;
