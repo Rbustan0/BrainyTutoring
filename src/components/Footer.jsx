@@ -2,18 +2,19 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
-    <h1>
-      <p>Find Us Here:</p>
-      <p>
-        <div style={{ display: 'flex'}}>
-          <a href='https://facebook.com' target='_blank'><img src="/facebook_logo.jpg" alt="Facebook" style={{ width: '55px', height: 'auto' }}/></a>
-          <a href="https://discord.gg/mdqKYHWpXB" target='_blank'><img src="/discord.jpg" alt="Discord" style={{ width: '55px', height: 'auto' }}/></a>
-          <a href="https://linkedin.com" target='_blank'><img src="/linkedIn.webp" alt="LinkedIn" style={{ width: '55px', height: 'auto' }} /></a>
-          <a href="https://twitter.com" target='_blank'><img src="/twitter_logo.png" alt="Twitter" style={{ width: '70px', height: '55px' }}/></a>
+    <footer className="bg-gray-900 py-8 px-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="text-white text-center md:text-left mb-4 md:mb-0">
+          <h1 className="text-xl font-bold">Find Us Here:</h1>
+          <div className="flex justify-center md:justify-start mt-2">
+            <a href="https://discord.gg/2BZSDZZMYg" target='_blank' className="mr-4"><i className="fab fa-discord text-white text-2xl hover:text-blue-500 transition duration-300"></i></a>
+            <a href="https://www.linkedin.com/company/brainey-tutoring/" target='_blank' className="mr-4"><i className="fab fa-linkedin-in text-white text-2xl hover:text-blue-500 transition duration-300"></i></a>
+          </div>
         </div>
-      </p>
-    </h1>
+        <div className="text-white text-center md:text-right">
+          <p className="text-sm">&copy; 2024 Brainey Tutoring. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
   );
 };
