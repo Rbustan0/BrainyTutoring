@@ -29,7 +29,7 @@ const Contact = () => {
     <div className="flex justify-center items-center">
       <div className="container mx-auto pb-4">
         <div className="py-4 rounded-lg shadow-lg">
-          <header className="bg-slate-600 rounded-t-xl text-white text-center py-4">
+          <header className="bg-gray-900 rounded-t-xl text-white text-center py-4">
             <h1 className="text-3xl font-semibold lg:6xl">Contact Us</h1>
           </header>
           <form className="p-6" onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ const Contact = () => {
               <label htmlFor="message" className="block text-md font-semibold text-gray-700">Message:</label>
               <textarea id="message" name="message" className="mt-1 p-2 w-full border rounded-md" placeholder="Enter your message" rows="5" autoComplete="off" required></textarea>
             </div>
-            <button type="submit" className="block w-full bg-blue-500 text-white font-semibold lg:text-lg py-3 px-6 rounded-md hover:bg-blue-600">Send</button>
+            <button type="submit" className="block w-full bg-blue-400 text-white font-semibold lg:text-lg py-3 px-6 rounded-md hover:bg-blue-600">Send</button>
           </form>
           <div className="p-6">
             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>

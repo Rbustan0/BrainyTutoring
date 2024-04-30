@@ -33,16 +33,16 @@ const Home = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-4">
+    <div className="container mx-auto pt-4">
       <div className="bg-blue-400 rounded-lg p-8 mb-8">
         <div className="text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-neutral-100 mb-6">Unlock Your Potential</h1>
-          <p className="text-base lg:text-lg text-neutral-100 mb-4">Discover your true capabilities with our personalized learning experience. From academic excellence to professional growth, we are here to guide you every step of the way. Join us today and embark on a journey towards success!</p>
+          <h1 className="text-4xl lg:text-5xl font-bold text-slate-100 lg:mb-6">Unlock Your Potential</h1>
+          <p className="text-base lg:text-xl text-slate-100 md:mb-4">Discover your true capabilities with our personalized learning experience. From academic excellence to professional growth, we are here to guide you every step of the way. Join us today and embark on a journey towards success!</p>
         </div>
       </div>
       {sections.map((section, index) => (
-        <div key={index} className="rounded-lg p-2 mb-2">
-          <div className="flex flex-col md:flex-row justify-center items-center mb-2">
+        <div key={index} className="rounded-lg p-2 lg:pr-10">
+          <div className="flex flex-col md:flex-row justify-center items-center lg:pr-6">
             <div className="md:w-1/2 p-4 flex justify-center">
               <img src={section.imageUrl} alt={section.alt} 
                 className="lazyload w-full md:w-10/12 h-auto lg:-h-full object-cover md:h-64 lg:h-96 rounded-lg"
@@ -51,8 +51,8 @@ const Home = () => {
             </div>
             <div className={`${section.className} rounded-lg md:w-1/2 p-4 md:ml-2`}>
               <div className="text-center">
-                <h1 className="text-2xl lg:text-4xl font-bold text-neutral-100 mb-6">{section.title}</h1>
-                <p className="text-sm lg:text-lg text-neutral-100 mb-4">{section.description}</p>
+                <h1 className="text-2xl lg:text-4xl font-bold text-slate-100 mb-6">{section.title}</h1>
+                <p className="text-sm lg:text-lg text-slate-100 mb-4">{section.description}</p>
               </div>
             </div>
           </div>
